@@ -36,6 +36,7 @@ nav, footer {
 }
 
 .nav-links {
+
     display: flex;
     list-style: none;
     justify-content: center;
@@ -43,8 +44,9 @@ nav, footer {
 
 
 .link { 
+    display: inline-block;
     cursor: pointer;
-    padding: 15px 20px;
+    padding: 10px 20px;
     text-transform: uppercase;
  
 }
@@ -53,6 +55,8 @@ nav, footer {
     border-bottom: 2px solid var(--main);
     font-weight: 600;
 }
+
+
 
 
 /* Home hero section */
