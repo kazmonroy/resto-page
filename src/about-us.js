@@ -39,8 +39,8 @@ export default function loadAboutUsPage() {
       </section>
 
       <footer>
-        <a href="">Made by Kaz <i class="fa-brands fa-github"></i></a>
-      </footer>
+      <a href="https://github.com/kazmonroy" target=”_blank”>Made by Kaz <i class="fa-brands fa-github"></i></a>
+    </footer>
     </div>`;
 
   const homeBtn = document.querySelector("#home");
