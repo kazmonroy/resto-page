@@ -1,3 +1,7 @@
+import loadHomePage from "./load-page.js";
+import loadAboutUs from "./about-us.js";
+import loadMenu from "./menu.js";
+
 export default function loadMenuPage() {
   content.innerHTML = `
   <nav>
@@ -75,7 +79,15 @@ export default function loadMenuPage() {
   </section>
 
   <footer>
-    <a href="">Made by Kaz <i class="fa-brands fa-github"></i></a>
-  </footer>
+  <a href="https://github.com/kazmonroy" target=”_blank”>Made by Kaz <i class="fa-brands fa-github"></i></a>
+</footer>
     `;
+
+  const homeBtn = document.querySelector("#home");
+  const menuBtn = document.querySelector("#menu");
+  const aboutUsBtn = document.querySelector("#about-us");
+
+  homeBtn.addEventListener("click", loadHomePage);
+  aboutUsBtn.addEventListener("click", loadAboutUs);
+  menuBtn.addEventListener("click", loadMenu);
 }

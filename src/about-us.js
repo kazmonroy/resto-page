@@ -1,4 +1,8 @@
-export default function loadAboutUs() {
+import loadPage from "./load-page.js";
+import loadAboutUs from "./about-us.js";
+import loadMenu from "./menu.js";
+
+export default function loadAboutUsPage() {
   content.innerHTML = `
   <nav>
   <ul class="nav-links">
@@ -38,4 +42,12 @@ export default function loadAboutUs() {
         <a href="">Made by Kaz <i class="fa-brands fa-github"></i></a>
       </footer>
     </div>`;
+
+  const homeBtn = document.querySelector("#home");
+  const menuBtn = document.querySelector("#menu");
+  const aboutUsBtn = document.querySelector("#about-us");
+
+  homeBtn.addEventListener("click", loadPage);
+  aboutUsBtn.addEventListener("click", loadAboutUs);
+  menuBtn.addEventListener("click", loadMenu);
 }
