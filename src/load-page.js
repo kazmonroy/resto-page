@@ -1,4 +1,4 @@
-export default function loadPage() {
+export default function loadHomePage() {
   content.innerHTML = `
   <nav>
   <ul class="nav-links">

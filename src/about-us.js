@@ -2,9 +2,9 @@ export default function loadAboutUs() {
   content.innerHTML = `
   <nav>
   <ul class="nav-links">
-    <li><a href="./index.html" class="link" id="home">Home</a></li>
-    <li><a href="./about-us.html" class="link" id="about-us">About us</a></li>
-    <li><a href="./menu.html" class="link" id="menu">Menu</a></li>
+    <li><a class="link" id="home">Home</a></li>
+    <li><a class="link" id="about-us">About us</a></li>
+    <li><a class="link" id="menu">Menu</a></li>
   </ul>
 </nav>
 

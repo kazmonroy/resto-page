@@ -1,19 +1,20 @@
 import "./style.css";
 import loadPage from "./load-page.js";
-import aboutUsPage from "./about-us.js";
-
-const content = document.querySelector("#content");
-
-function init() {
-  loadPage();
-}
+import loadAboutUs from "./about-us.js";
+import loadMenu from "./menu.js";
 
 init();
 
-const homeBtn = document.querySelector("#home");
-const aboutUsBtn = document.querySelector("#about-us");
-const menuBtn = document.querySelector("#menu");
+function init() {
+  loadPage();
+  navigate();
+}
 
 function navigate() {
-  aboutUsBtn.addEventListener("click", aboutUsPage);
+  const homeBtn = document.querySelector("#home");
+  const menuBtn = document.querySelector("#menu");
+  const aboutUsBtn = document.querySelector("#about-us");
+
+  aboutUsBtn.addEventListener("click", loadAboutUs);
+  menuBtn.addEventListener("click", loadMenu);
 }
